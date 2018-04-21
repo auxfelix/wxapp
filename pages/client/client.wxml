@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <view class='button'>
+    <button class='after' catchtap='clickAfter' type='primary'>申请售后</button>
+    <button class='maintain' catchtap='clickMaintain' type='primary'>维修查询</button>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+/* pages/after/after.wxss */
+
+page {
+  height: 100%;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+.section {
+  /**
+  background-color: white;
+  margin: 10rpx 0 20rpx 0rpx;
+  */
+  position: relative;
+  display: flex;
+  padding: 12px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #dadada;
+}
+
+.section-title {
+}
+
+.icon {
+  margin-right: 10rpx;
+  height: 25px;
+  width: 25px;
+}
+
+.address {
+}
+.info{
+  display: flex;
+}
+.submit {
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+}

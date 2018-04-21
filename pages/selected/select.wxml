@@ -1,0 +1,8 @@
+<!--pages/selected/select.wxml-->
+<view class='section'>
+  <view class='flex_wrp' style='flex-direction:row;'>
+    <button class='daiwx' catchtap='clickdaiwx'>待维修</button>
+    <button class='weixz'catchtap='clickweixz'>维修中</button>
+    <button class='finished'catchtap='clickfinish'>已完成</button>
+  </view>
+</view>

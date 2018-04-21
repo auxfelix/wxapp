@@ -1,0 +1,17 @@
+/* pages/selected/select.wxss */
+page{
+  height: 100%;
+}
+.flex_wrp{
+  display: flex;
+}
+.daiwx{
+  width: 100%;
+}
+.weixz{
+  width: 100%;
+}
+
+.finished{
+  width: 100%;
+}

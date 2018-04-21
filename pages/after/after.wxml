@@ -1,0 +1,70 @@
+<!--pages/after/after.wxml-->
+<view class='section'>
+  <view class='section-title'>
+    <image class='icon' src='/image/icon/地址.png'></image>
+    <text class='address' space='ensp'>寄往售后中心地址
+深圳市南山区西丽留仙洞工业区C栋7楼，深圳市艾塔文化科技有限公司收
+联系电话：0755-86372179
+  </text>
+  </view>
+</view>
+<view class='form'>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <view class='info'>
+      <image class='icon' src='/image/icon/用户信息.png'></image>
+      <view>寄件信息</view>
+    </view>
+    <view class='section'>
+      <view class='buy'>购买渠道：</view>
+      <picker bindchange='bindPickerChange1' value='{{buyindex}}' range='{{buyarray}}'>
+        <view class='picker'>
+          {{buyarray[buyindex]}}
+        </view>
+      </picker>
+    </view>
+    <view class='section'>
+      <view class='date'>购买日期：</view>
+      <picker mode='date' bindchange='bindChangeDate' value='{{date}}' start='1949-10-01' end='10000-12-31'>
+        <view class='picker'>{{date}}</view>
+      </picker>
+    </view>
+    <view class='section'>
+      <view class='company'>寄件公司：</view>
+      <picker bindchange='bindPickerChange2' name='company' value='{{companyindex}}' range='{{companyarray}}'>
+        <view class='picker'>
+          {{companyarray[companyindex]}}
+        </view>
+      </picker>
+    </view>
+    <view class='section'>
+      <view class='order'>快递单号：</view>
+      <input type='text' name='orderNo' class='kdiord' placeholder='请输入单号'></input>
+    </view>
+
+    <view class='section'>
+      <view class='order'>故障说明：</view>
+      <input type='text' placeholder='故障描述'></input>
+    </view>
+    <view class='info'>
+    <image class='icon' src='/image/icon/用户信息.png'></image>
+    <view>回寄信息</view>
+    </view>
+    <view class='section'>
+      <view class='username'>用户姓名：</view>
+      <input type='text' name='userName' placeholder='请输入姓名'></input>
+    </view>
+
+    <view class='section'>
+      <view class='tel'>联系方式：</view>
+      <input id='name' name='mobile' type='number' class='phone' placeholder='请输入正确的手机号码'></input>
+    </view>
+    <view class='section'>
+      <view class='addr'>详细地址：</view>
+      <input type='text' placeholder='请填写详细的回寄地址'></input>
+    </view>
+
+    <view class='submit'>
+      <button class='btn' form-type='submit' type='primary'>提交</button>
+    </view>
+  </form>
+</view>

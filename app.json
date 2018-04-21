@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/client/client",
+    "pages/logs/logs",
+    "pages/after/after",
+    "pages/selected/select"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF6A6A",
+    "navigationBarTitleText": "艾塔售后",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#66CD00",
+    "color": "#bfbfbf",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/icon/tabBar/主页.png",
+        "selectedIconPath": "image/icon/tabBar/主页选中.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "image/icon/日志.png",
+        "selectedIconPath": "image/icon/日志选中.png"
+      },
+      {
+        "pagePath": "pages/client/client",
+        "text": "售后",
+        "iconPath": "image/icon/tabBar/repair.png",
+        "selectedIconPath": "image/icon/tabBar/repair-selected.png"
+      }
+    ]
+  }
+}
